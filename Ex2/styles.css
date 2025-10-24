@@ -1,0 +1,96 @@
+body{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav{
+    background: #35424a;
+    color: #ffffff;;
+    padding: 10px 0;
+    text-align: left;
+}
+
+h2{
+    text-align: center;
+    color: #35424a;
+}
+
+#Introduction{
+    text-align: center;
+    padding: 20px;
+    background: #e2e2e2;
+}
+
+#Services{
+    display: grid;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+#service-list {
+    list-style-type: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+#Products{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+#product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style-type: none;
+    justify-items: center;
+    align-items: center;
+    padding: 30px;
+    margin: 0;
+    gap: 20px;
+    max-width: 1000px;
+}
+
+#Contact{
+    text-align: center;
+    padding: 20px;
+    background: #e2e2e2;
+}
+
+#footer{
+    background: #35424a;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+#registration{
+    text-align: center;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    flex-direction: column;
+}
+
+
+
+
+
+
+

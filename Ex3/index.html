@@ -25,6 +25,13 @@
 </header>
 
 <main>
+    <!--Search bar-->
+    <section id="search-bar">
+        <input type="text" id="search-input" placeholder="Search for services or products...">
+        <button id="search-button">Search</button>
+        <button class="add-button">Add Item</button>
+    </section>
+
     <section id = "Introduction">
         <!--Welcome section-->
         <h2>Welcome to GGEZ</h2>
@@ -56,21 +63,21 @@
 
     <section id="product-list">
         <article class = "product-item">
-            <h3>Gaming PC Rental</h3>
+            <h3 class="product-name">Gaming PC Rental</h3>
             <img src="mambo.webp" alt="Gaming PC Rental" width="200" height="150">
             <p>Rent a high-performance gaming PC by the hour. Perfect for gamers looking for top-notch hardware without the investment.</p>
             <p class="Price">Price: 5$/h</p>
         </article>
 
         <article class = "product-item">
-            <h3>Snack Combo</h3>
+            <h3 class="product-name">Snack Combo</h3>
             <img src="oguri.jpg" alt="Snack Combo" width="200" height="150">
             <p>Enjoy our special snack combo that includes a drink and a selection of snacks to keep you energized during your gaming sessions.</p>
             <p class="Price">Price: 7$</p>
         </article>
 
         <article class = "product-item">
-            <h3>Membership Package</h3>
+            <h3 class="product-name">Membership Package</h3>
             <img src="tamamo.jpg" alt="Membership Package" width="200" height="150">
             <p>Sign up for our membership package to enjoy discounted rates, priority access to gaming stations, and exclusive member-only events.</p>
             <p class="Price">Price: 20$/month</p>
@@ -103,6 +110,23 @@
             <button type="submit">Submit</button>
         </form>
     </section>
+
+    <section id="add-form">
+        <!-- Form thêm sản phẩm (ẩn mặc định) -->
+        <form id="addProductForm" class="hidden">
+            <h3>Thêm sản phẩm mới</h3>
+            <label for="newName">Tên sản phẩm:</label>
+            <input type="text" id="newName" required>
+
+            <label for="newPrice">Giá:</label>
+            <input type="number" id="newPrice" required>
+
+            <label for="newDesc">Mô tả:</label>
+            <textarea id="newDesc" rows="3"></textarea>
+
+            <button type="submit">Thêm</button>
+        </form>
+    </section>
     <!--Contact section-->
     <section id = "Contact">
         <h2>Contact Us</h2>
@@ -114,8 +138,8 @@
 
 <footer>
     <p>&copy; 2024 GGEZ Internet Café. All rights reserved.</p>
-
-    
 </footer>
+
+<script src="script.js" defer></script>
 <body>
 </html> 

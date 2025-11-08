@@ -1,7 +1,7 @@
 import React from "react";
-import SearchForm from "./components/SearchForm";
-import AddUser from "./components/AddUser";
-import ResultTable from "./components/ResultTable";
+import SearchForm from "./components/SearchForm.jsx";
+import AddUser from "./components/AddUser.jsx";
+import ResultTable from "./components/ResultTable.jsx";
 
 export default function App(){
     const [kw, setKeyword] = React.useState("");

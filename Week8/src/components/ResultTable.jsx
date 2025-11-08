@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function ResultTable({keyword, user, onAddred}){
+export default function ResultTable({keyword, user, onAdded}){
     const [users, setUsers] = React.useState([]);
     const [loading, setLoading] = React.useState(true);
 
@@ -20,9 +20,9 @@ export default function ResultTable({keyword, user, onAddred}){
     React.useEffect(() => {
         if(user){
             setUsers((prev) => [...prev, {...user, id: prev.length+1}]);
-            onAddred();
+            onAdded();
         }
-    }, [user]);
+    }, [user, onAdded]);
 
     const [editing, setEditing] = React.useState(null);
 
@@ -72,7 +72,7 @@ export default function ResultTable({keyword, user, onAddred}){
                             <td>{u.address.city}</td>
                             <td>
                                 <button onClick = {() => editUser(u)}>Sửa</button>
-                                <button onClick = {() => removeUser(u)}>Xoá</button>
+                                <button onClick = {() => removeUser(u.id)}>Xoá</button>
                             </td>
                         </tr>
                     ))}
